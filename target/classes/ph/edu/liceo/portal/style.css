@@ -1,0 +1,105 @@
+/* Base Screen & Typography */
+.root {
+    -fx-font-family: "Segoe UI", Roboto, sans-serif;
+    -fx-background-color: #F4F5F7;
+}
+
+/* Titles & Branding */
+.title-university {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #7A0000; /* Liceo Maroon */
+    -fx-letter-spacing: 1px;
+}
+
+.title-portal {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #111827;
+}
+
+/* Input Fields */
+.text-field, .password-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1D5DB;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 14px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #1F2937;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.03), 4, 0, 0, 2);
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #7A0000;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(122,0,0,0.18), 6, 0, 0, 0);
+}
+
+/* Buttons with Gradient & Shadow */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #8B0000, #660000);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(122,0,0,0.25), 6, 0, 0, 3);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #A00000, #7A0000);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #500000, #400000);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+/* Status & Alert Label */
+.error-message {
+    -fx-text-fill: #DC2626;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Profile Header Panel */
+.header-box {
+    -fx-background-color: linear-gradient(to bottom right, #7A0000, #4A0000);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 8, 0, 0, 4);
+}
+
+/* Gold Initial Avatar Badge */
+.avatar-label {
+    -fx-background-color: linear-gradient(to bottom right, #FFE066, #FFC107);
+    -fx-text-fill: #4A0000;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-min-width: 64px;
+    -fx-min-height: 64px;
+    -fx-max-width: 64px;
+    -fx-max-height: 64px;
+    -fx-alignment: center;
+    -fx-background-radius: 32px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.25), 6, 0, 0, 2);
+}
+
+.profile-name {
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Details Grid Layout */
+.grid-pane {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 4);
+}
+
+.grid-pane .label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #374151;
+}
